@@ -22,6 +22,8 @@ class App extends Component {
       
       this.setState({data: makeupInfo})
       // console.log(this.state.data)
+      //this.state.data is the same info as makeupInfo. the data is 
+      //just placed in diff. locattion. the state places info into app
 
     })
     .catch(error => {
@@ -35,8 +37,21 @@ class App extends Component {
     return (
       <div className= "lipPicture">
         {/* <Home makeupDetails= {this.state.data}/> */}
+      <nav className= "navbar">
 
+        <h2 className= "link">
+          <link to= "/About"> About </link>
+          <link to= "/Home">Home</link>
+          <link to= "makeupBrands">Makeup Brands</link>
+
+        </h2>
+
+
+
+      </nav>
       </div>
+      
+     
     );
   }
 }
